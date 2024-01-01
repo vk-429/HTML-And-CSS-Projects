@@ -1,10 +1,13 @@
+/* Universal Styling */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     background-color: #f9f5ed;
+    font-family: 'Poppins', sans-serif;
 }
 
+/* navbar styling */
 nav{
     padding: 20px 10%;
     height: 15vh;
@@ -15,19 +18,31 @@ nav ul{
     align-items: center;
     list-style: none;
     justify-content: start;
+    gap: 5%;
 }
+
+/* header navbar link text styling */
 a{
     text-decoration: none;
     color: black;
 }
 
+/* main styling */
+.main{
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+    gap: 20%;
+}
+
+/* leftmain button styling */
 button{
     background-color: #3b855b;
     padding: 4px 10px;
     font-size: 18px;
     cursor: pointer;
     color: white;
-    border: 1px solid white;
+    border: none;
     border-radius: 8px;
     font-weight: 700;
     width: fit-content;
@@ -40,37 +55,36 @@ button:hover{
     border: 1px solid #3b855b;
 }
 
-nav ul li img{  
-    width: 150px;
-    height: 40px;
-}
-
-nav ul li{
-    margin-right: 5%;
-    font-weight: 600;
-}
-
-main{
-    display: flex;
-    align-items: center;
-
-}
-
+/* leftmain text styling */
 .leftmain{
-    width: 40%;
+    width: 30%;
+}
+.leftmain h1{
+    font-size: 40px;
+    font-weight: 900;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
 }
 
 .leftmain p{
-    margin: 5% 0;
+    font-weight: 500;
+    margin-bottom: 15px;
 }
 
-.rightmain div img{
-    width: 30%;
+/* rightmain images styling */
+
+.rightmain{
+    padding-top: 5%;
 }
 
-.rightmain div img :first-child{
-    margin-right: 20px;
+.rightmain .div1{
+    display: flex;
+    gap: 15px;
+    height: 34.55vh;
+    margin-bottom: 15px;
 }
-.rightmain div{
-    margin-bottom: 20px;
+
+.rightmain .div2{
+    display: flex;
+    height: 28.5vh;
 }
