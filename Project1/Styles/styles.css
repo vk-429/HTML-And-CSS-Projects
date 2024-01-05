@@ -1,0 +1,227 @@
+/* Universal Styling */
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/* Body Styling */
+body{
+    display: flex;
+    flex-direction: column;
+    background-image: url('../Assets/pexels-maxyne-barcel-10402282 1.png');
+    background-repeat:no-repeat;
+    background-attachment: cover;
+    background-size: 100% 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+    justify-content: space-between;
+    /* align-items: center; */
+}
+
+/* Header Styling */
+header{
+    display: flex;
+    padding: 2% 3%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Logo */
+header img{
+    height: 5%;
+    width: 10%;
+}
+
+/* Navbar */
+header nav{
+    padding-right: 7%;
+    width: 20%;
+}
+header nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30%;
+}
+li{
+    list-style: none;
+}
+header nav ul li a{
+    text-decoration: none;
+    color: #ffdb49;
+    font-weight: 500;
+}
+header nav ul li a:hover{
+    text-decoration: underline;
+    color: #ffdb49;
+    font-weight: 900;
+}
+
+/* Header Button Styling */
+header button{
+    background-color: #f75451;
+    font-size: 18px;
+    font-weight: 700;
+    color: white;
+    padding: 10px 30px;
+    border: none;
+}
+header button:hover{
+    color: #f75451;
+    background-color: white;
+    border: 1px solid #f75451;
+}
+
+/* Header Media Query*/
+@media(max-width:992px)
+{
+    header img{
+        height: 10%;
+        width: 20%;
+    }
+}
+@media(max-width:600px)
+{
+    header nav ul li a{
+        padding-left: 20%;
+    }
+    header nav ul li a{
+        font-size: 10px;
+    }
+    header button{
+        font-size: 15px;
+        font-weight: 700;
+        padding: 5px 10px;
+    }
+}
+@media(max-width:300px)
+{
+    header nav ul li a{
+        font-size: 7px;
+    }
+    header button{
+        font-size: 10px;
+        font-weight: 700;
+        padding: 5px 10px;
+    }
+}
+
+/* Main section Styling */
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.maintext{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1%;
+    font-family: 'Dela Gothic One', sans-serif;
+}
+main h1{
+    color: #ffdb49;
+    font-weight: 500;
+}
+main button{
+    border: none;
+    background-color: #f75451;
+    color: white;
+    font-weight: 700;
+}
+main button:hover{
+    color: #f75451;
+    background-color: white;
+    border: 1px solid #f75451;
+}
+
+/* Main Section Media Query */
+@media(max-width:300px){
+    main h1{
+        font-size: 20px;
+    }
+    main button{
+        font-size: 10px;
+        padding: 10px 15px;
+    }
+}
+@media(min-width:300px)
+{
+    main h1{
+        font-size: 30px;
+    }
+    main button{
+        font-size: 15px;
+        padding: 10px 15px;
+    }
+}
+@media(min-width:600px)
+{
+    main h1{
+        font-size: 50px;
+    }
+}
+@media(min-width:768px)
+{
+    main h1{
+        font-size: 60px;
+    }
+    main button{
+        font-size: 20px;
+        padding: 15px 30px;
+    }
+}
+@media(min-width:992px)
+{
+    
+    main h1{
+        font-size: 70px;
+    }
+    main button:hover{
+        border: 2px solid red;
+    }
+}
+@media(min-width:1200px)
+{
+    main h1{
+        font-size: 80px;
+    }
+    main button{
+        font-size: 25px;
+        padding: 20px 35px;
+    }
+}
+
+/* Footer Styling */
+footer
+{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding: 0 2% 1%;
+}
+
+/* Media Query for Footer */
+@media(max-width:600px)
+{
+    footer img{
+        height: 15%;
+        width: 15%;
+    }
+}
+@media(min-width:600px)
+{
+    footer img{
+        height: 12%;
+        width: 12%;
+    }
+}
+@media(min-width:1200px){
+    footer img{
+        height: 8%;
+        width: 8%;
+    }
+}
+
