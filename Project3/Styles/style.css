@@ -1,0 +1,408 @@
+/* Universal Selector Styling */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Body Styling */
+body{
+    background-image: url(../Assets/bg.png);
+    background-repeat:no-repeat;
+    background-attachment: cover;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    overflow: hidden;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Header Styling */
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    padding: 0.8% 5% 1.2%;
+}
+
+/* Header Navbar */
+header nav{
+    display: flex;
+    align-items: center;
+}
+header nav ul li{
+    list-style: none;
+}
+header nav ul{
+    display: flex;
+    align-items: center;
+    border-left: 1px solid #fff;
+}
+header nav ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+header nav ul li a:hover{
+    text-decoration: underline;
+    font-weight: 700;
+}
+
+/* Header Button */
+header button{
+    font-weight: 600;
+    color: #fff;
+    background-color: #c41dde;
+    border: none;
+}
+header button:hover{ 
+    font-weight: 800;
+    background-color: #fff;
+    color: #c41dde;
+}
+
+
+/* Main Section Styling */
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+}
+main div{
+    display: flex;
+    color: #fff;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Main Button */
+main button{
+    font-weight: 700;
+    border: none;
+    color: #fff;
+    background-color: #c41dde;
+}
+main button:hover{
+    font-weight: 800;
+    background-color: #fff;
+    color: #c41dde;
+    border: 2px solid #c41dde;
+}
+
+
+/* Media Query (Applicable from 250px to 2500px Screen Width)*/
+@media(max-width:300px)
+{
+    body{
+        background-size: 100% 100%;
+    }
+    header{
+        padding: 0.8% 4% 1.2%;
+    }
+    header img{
+        height: 12px;
+        width: 35px;
+        padding-right: 10px;
+    }
+    header nav ul{
+        height: 20px;
+        gap: 10px;
+        padding-left: 10px;
+        padding-bottom: 7px;
+    }
+    header nav ul li a{
+        font-size: 5px;
+    }
+    header button{
+        font-size: 6px;
+        padding: 3px 6px;
+        border-radius: 3px;
+    }
+    header button:hover{
+        font-weight: 600;
+        border: 0.8px solid #c41dde;
+    }
+    main{
+        margin-top: -10%;
+    }
+    main div{
+        margin-bottom: 20px;
+    }
+    main div h1{
+        font-size: 25px;
+    }
+    main div p{
+        font-size: 12px;
+    }
+    main button{
+        font-size: 12px;
+        padding: 8px 10px;
+        border-radius: 4px;
+    }
+    main button:hover{
+        font-weight: 700;
+        border: 1.2px solid #c41dde;
+    }
+}
+
+@media(min-width:300px)
+{
+    body{
+        background-size: 100% 100%;
+    }
+    header{
+        padding: 0.8% 4% 1.2%;
+    }
+    header img{
+        height: 15px;
+        width: 40px;
+        padding-right: 10px;
+    }
+    header nav ul{
+        height: 20px;
+        gap: 10px;
+        padding-left: 10px;
+        padding-bottom: 7px;
+    }
+    header nav ul li a{
+        font-size: 5px;
+    }
+    header button{
+        font-size: 7px;
+        padding: 3px 6px;
+        border-radius: 3px;
+    }
+    header button:hover{
+        font-weight: 600;
+        border: 0.8px solid #c41dde;
+    }
+    main{
+        margin-top: -10%;
+    }
+    main div{
+        margin-bottom: 20px;
+    }
+    main div h1{
+        font-size: 30px;
+    }
+    main div p{
+        font-size: 12px;
+    }
+    main button{
+        font-size: 12px;
+        padding: 8px 10px;
+        border-radius: 4px;
+    }
+    main button:hover{
+        font-weight: 700;
+        border: 1.2px solid #c41dde;
+    }
+}
+
+@media(min-width:500px)
+{
+    header img{
+        height: 16px;
+        width: 45px;
+    }
+    header nav ul li a{
+        font-size: 7px;
+    }
+    header button{
+        font-size: 8px;
+    }
+}
+
+@media(min-width:600px)
+{
+    body{
+        background-size: 100% 120%;
+    }
+    header img{
+        height: 18px;
+        width: 53px;
+        padding-right: 12px;
+    }
+    header nav ul{
+        height: 22px;
+        gap: 12px;
+        padding-left: 12px;
+    }
+    header nav ul li a{
+        font-size: 8px;
+    }
+    header button{
+        font-size: 9px;
+        padding: 4px 8px;
+        border-radius: 3.5px;
+    }
+    main{
+        padding-top: 10%;
+    }
+    main div{
+        margin-bottom: 25px;
+    }
+    main div h1{
+        font-size: 40px;
+    }
+    main div p{
+        font-size: 15px;
+    }
+    main button{
+        font-size: 15px;
+        padding: 8px 12px;
+        border-radius: 5px;
+    }
+    main button:hover{
+        border: 1.5px solid #c41dde;
+    }
+}
+
+@media(min-width:768px)
+{
+    body{
+        background-size: 100% 140%;
+    }
+    header img{
+        height: 21px;
+        width: 65px;
+        padding-right: 15px;
+    }
+    header nav ul{
+        height: 25px;
+        gap: 15px;
+        padding-left: 15px;
+    }
+    header nav ul li a{
+        font-size: 10px;
+    }
+    header button{
+        font-size: 12px;
+        padding: 5px 10px;
+        border-radius: 4px;
+    }
+    main button:hover{
+        border: 1px solid #c41dde;
+    }
+    main{
+        padding-top: 15%;
+    }
+    main div{
+        margin-bottom: 30px;
+    }
+    main div h1{
+        font-size: 50px;
+    }
+    main div p{
+        font-size: 18px;
+    }
+    main button{
+        font-size: 18px;
+        padding: 9px 14px;
+        border-radius: 6px;
+    }
+    main button:hover{
+        border: 1.8px solid #c41dde;
+    }
+}
+
+@media(min-width:1200px)
+{
+    body{
+        background-size: 100% 140%;
+    }
+    header img{
+        height: 28px;
+        width: 85px;
+        padding-right: 25px;
+    }
+    header nav ul{
+        height: 40px;
+        gap: 25px;
+        padding-left: 25px;
+    }
+    header nav ul li a{
+        font-size: 14px;
+    }
+    header button{
+        font-size: 15px;
+        padding: 6px 12px;
+        border-radius: 4.5px;
+    }
+    main button:hover{
+        border: 1.5px solid #c41dde;
+    }
+    main{
+        padding-top: 20%;
+    }
+    main div{
+        margin-bottom: 35px;
+    }
+    main div h1{
+        font-size: 70px;
+    }
+    main div p{
+        font-size: 25px;
+    }
+    main button{
+        font-size: 25px;
+        padding: 12px 16px;
+        border-radius: 10px;
+    }
+    main button:hover{
+        border: 2px solid #c41dde;
+    }
+}
+
+@media(min-width:1600px)
+{
+    header{
+        padding: 0.8% 5% 1.2%;
+    }
+    body{
+        background-size: 100% 150%;
+    }
+    header img{
+        height: 35px;
+        width: 100px;
+        padding-right: 35px;
+    }
+    header nav ul{
+        height: 45px;
+        gap: 35px;
+        padding-left: 35px;
+    }
+    header nav ul li a{
+        font-size: 18px;
+    }
+    header button{
+        font-size: 20px;
+        padding: 8px 15px;
+        border-radius: 5px;
+    }
+    main button:hover{
+        border: 1.8px solid #c41dde;
+    }
+    main{
+        padding-top: 25%;
+    }
+    main div{
+        margin-bottom: 40px;
+    }
+    main div h1{
+        font-size: 90px;
+    }
+    main div p{
+        font-size: 30px;
+    }
+    main button{
+        font-size: 30px;
+        padding: 15px 18px;
+        border-radius: 12px;
+    }
+    main button:hover{
+        border: 2px solid #c41dde;
+    }
+}
