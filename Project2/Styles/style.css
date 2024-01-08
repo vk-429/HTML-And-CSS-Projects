@@ -55,6 +55,7 @@ header button:hover{
     color: #6d6bc3;
     border: 2px solid #6d6bc3;
     font-weight: 800;
+    cursor: pointer;
 }
 
 
@@ -89,6 +90,7 @@ main{
     color: #6d6bc3;
     border: 2px solid #6d6bc3;
     font-weight: 800;
+    cursor: pointer;
 }
 
 /* Rightmain Styling */
