@@ -14,6 +14,7 @@ body{
     box-sizing: border-box;
     overflow: hidden;
     font-family: 'Poppins', sans-serif;
+    min-width: 300px;
 }
 
 /* Header Styling */
@@ -103,6 +104,7 @@ main{
 @media(max-width:300px){
     body{
         margin: 3% ;
+        overflow: scroll;
     }
     header nav ul li img{
         height: 25px;
@@ -116,7 +118,7 @@ main{
         font-size: 8px;
         font-weight: 500;
         padding: 4px 7px;
-        margin-left: 12%;
+        margin-right: 2%;
         border-radius: 4px;
     }
     header button:hover{
@@ -128,8 +130,14 @@ main{
         justify-content: center;
         
     }
+    .leftmain{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 300px;
+    }
     .leftmain h1{
-        font-size: 40px;
+        font-size: 45px;
     }
     .leftmain p{
         font-size: 15px;
@@ -153,21 +161,22 @@ main{
 @media(min-width:300px){
     body{
         margin: 3% ;
+        overflow: scroll;
     }
     header nav ul li img{
-        height: 35px;
-        width: 100px;
+        height: 32px;
+        width: 90px;;
     }
     header nav ul {
-        font-size: 9px;
+        font-size: 8px;
         gap: 3%;
     }
     header button{
-        font-size: 10px;
         font-weight: 500;
-        padding: 5px 8px;
-        margin-left: 12%;
+        margin-left: 15%;
         border-radius: 5px;
+        font-size: 9px;
+        padding: 4px 7px;
     }
     header button:hover{
         font-weight: 600;
@@ -177,8 +186,14 @@ main{
         flex-direction: column-reverse;
         justify-content: center;
     }
+    .leftmain{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 300px;
+    }
     .leftmain h1{
-        font-size: 40px;
+        font-size: 45px;
     }
     .leftmain p{
         font-size: 15px;
@@ -195,13 +210,40 @@ main{
         font-weight: 600;
     }
     .rightmain img{
+        height: 200px;
+        width: 300px;
+    }
+}
+@media(min-width:440px){
+    header nav ul{
+        font-size: 9px;
+    }
+    header nav ul li img{
+        height: 35px;
+        width: 100px;
+    }
+    header button{
+        font-size: 10px;
+        padding: 5px 8px;
+    }
+    .rightmain img{
         height: 280px;
         width: 400px;
+    }
+}
+@media(min-width:500px)
+{
+    .leftmain h1{
+        font-size: 70px;
+    }
+    .leftmain{
+        width: 450px;
     }
 }
 @media(min-width:700px){
     body{
         margin: 3% 7%;
+        overflow: hidden;
     }
     header nav ul li img{
         height: 55px;
@@ -220,6 +262,9 @@ main{
     main{
         flex-direction: row;
         margin-top: 5%;
+    }
+    .leftmain{
+        display: block;
     }
     .leftmain h1{
         font-size: 35px;
@@ -282,7 +327,7 @@ main{
         margin-top: 3%;
     }
     .leftmain h1{
-        font-size: 50px;
+        font-size: 45px;
     }
     .leftmain p{
         font-size: 15px;
@@ -298,8 +343,30 @@ main{
         font-weight: 800;
     }
     .rightmain img{
-        height: 580px;
-        width: 840px;
+        height: 540px;
+        width: 780px;
+    }
+}
+
+@media(min-width:1600px){
+    body{
+        margin: 3% 0%;
+    }
+    header{
+        justify-content: space-evenly;
+        gap: 15%;
+        margin-left: -8%;
+    }
+    main{
+        justify-content: space-evenly;
+        margin-top: 5%;
+    }
+    .leftmain h1{
+        font-size: 60px;
+    }
+    .rightmain img{
+        height: 700px;
+        width: 1000px;
     }
 }
 

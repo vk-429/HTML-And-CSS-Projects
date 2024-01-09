@@ -11,6 +11,7 @@ body{
     align-items: center;
     background-color: #74ffe8;
     margin-top: 2%;
+    min-width: 300px;
 }
 
 .heading,.heading1{
@@ -93,6 +94,7 @@ h1{
 {
     body{
         background-color: #bb2f3f;
+        overflow: scroll;
     }
     .div1,.div2,.div3{
         display: none;

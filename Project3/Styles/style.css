@@ -14,6 +14,7 @@ body{
     box-sizing: border-box;
     overflow: hidden;
     font-family: 'Poppins', sans-serif;
+    min-width: 300px;
 }
 
 /* Header Styling */
@@ -99,7 +100,10 @@ main button:hover{
 @media(max-width:300px)
 {
     body{
-        background-size: 100% 80%;
+        background-size: 100%;
+        background-attachment: fixed;
+        background-position: top;
+        overflow: scroll;
     }
     header{
         padding: 0.8% 4% 1.2%;
@@ -132,21 +136,22 @@ main button:hover{
         border: 0.8px solid #c41dde;
     }
     main{
-        padding-bottom: 120px;
+        height: 25vh;
     }
     main div{
-        margin-bottom: 20px;
+        margin-bottom: 10px;
     }
     main div h1{
-        font-size: 25px;
+        font-size: 20px;
     }
     main div p{
-        font-size: 12px;
+        font-size: 10px;
     }
     main button{
         font-size: 12px;
         padding: 8px 10px;
         border-radius: 4px;
+
     }
     main button:hover{
         font-weight: 700;
@@ -154,7 +159,7 @@ main button:hover{
     }
 }
 
-@media(min-width:300px)
+@media(min-width:301px)
 {
     body{
         background-size: 100% 90%;
