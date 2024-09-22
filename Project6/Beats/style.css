@@ -1,0 +1,1426 @@
+/*  Universal Selector  */
+*{
+    margin: 0;
+}
+
+/* Body Styling */
+body{
+    background-color: rgba(0, 0, 0, 0.942);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding:0 0 0 10%;
+    color: #fff;
+    min-width: 300px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* Header */
+header{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.upperhead{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-right: 15% ;
+    gap: 10%;
+}
+
+.upperleft{
+    display: flex;
+    align-items: flex-start;
+    padding-left:5%;
+}
+[alt="Beats Logo"]{
+    margin: 15% 10% 0 0;
+}
+[alt="Main Image"]
+{
+    height: 520px;
+    margin-left: 5%;
+}
+.upperright{
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+}
+.upperright nav ul{
+    display: flex;
+    margin: 5% 0 12% 0; 
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 5% ;
+}
+.upperright nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+}
+.upperright nav ul li a:hover{
+    text-decoration: underline;
+    font-weight: 600;
+}
+.upperright nav ul li{
+    list-style: none;
+}
+header button{
+    border-top: 3.5px solid #868181;
+    border-left: 3.5px solid #868181;
+    border-bottom: none;
+    border-right: none;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+    background-color: #262424e7;
+    padding: 15px 50px;
+}
+
+header button:hover{
+    font-weight: 700;
+    color: black;
+    cursor: pointer;
+    background-color: #fff;
+    border-bottom: none;
+    border-right: none;
+}
+
+.onear-logo{
+    display: flex;
+    padding-left: 25%;
+    flex-wrap: nowrap;
+    position:relative;
+}
+
+.beats3{
+    position: relative;
+    flex-wrap: nowrap;
+    align-self: flex-start;
+    margin-top: 2%;
+    margin-left:13% ;
+}
+.beats3 h1{
+    font-size: 55px;
+}
+.beats3 h3{
+    margin: 30px 0;
+}
+.beats3 h3+p{
+    display: flex;
+    margin-bottom: 30px;
+    font-size: 15px;
+    line-height: 35px;
+}
+.shopping-bag{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    background-color: #1c1c1c;
+    padding: 12px 30px;
+    width: fit-content;
+    border-radius: 10px;
+}
+.shopping-bag a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+}
+.shopping-bag a:hover{
+    font-weight: 600;
+    text-decoration: underline;
+}
+.shopping-bag img+a+p{
+    font-size: 20px;
+    font-weight: 600;
+}
+.lowerhead{
+    margin-right: 10% ;
+    margin-top: 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+/* Main Section */
+/* specs */
+.specs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10%;
+    margin-right: 10%;
+}
+.specs-logo{
+    margin-bottom: 3%;
+}
+.specs-content{
+    display: flex;
+    justify-content: center;
+    padding-right: 6%;
+}
+.leftspecs{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-right: 25%;
+}
+.leftspecs img{
+    height: 30px;
+}
+.rightspecs{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3%;
+}
+.rightspecs img{
+    height: 350px;
+}
+.battery,.load,.microphone,.connection{
+    width: 30vh;
+}
+.connection,.microphone{
+    margin-left: 20%;
+}
+
+/* case */
+.case{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+}
+
+.uppercase{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.case-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10%;
+    gap: 80px;
+}
+.case-logo{
+    margin-bottom: 12%;
+    margin-right: 10%;
+}
+.case-paragraph{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.case-paragraph{
+    width: 50vh;
+    font-size: 16px;
+    line-height: 35px;
+}
+
+.more-info{
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    gap: 30px;
+    background-color: #1c1c1c;
+    padding: 10px 30px;
+    border-radius: 10px;
+}
+.more-info a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+}
+.more-info a:hover{
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+/* Lowercase */
+.lowercase{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1c1c1c;
+    padding: 55px;
+    border-radius: 20px;
+    width: fit-content;
+    gap: 100px;
+    margin:10% 20% 10% 10%;
+    width: 70vw;
+}
+
+.lowercase-content{
+    display: flex;
+    flex-direction: column;
+}
+.lowercase-content p{
+    margin: 20px 0;
+    
+}
+.buynow{
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    height: fit-content;
+    gap: 20px;
+    background-color: #000;
+    padding: 15px 30px;
+    border-radius: 10px;
+}
+.buynow a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+}
+.buynow a:hover{
+    font-weight: 600;
+    text-decoration: underline;
+}
+.lowercase-image img{
+    height: 350px;
+}
+
+/* Style */
+.style{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 10%;
+}
+.style-logo{
+    margin-bottom: 3%;
+}
+.style-logo img{
+    height: 100px;
+}
+.style-content{
+    display: flex;
+    gap: 80px;
+    padding-right: 11%;
+}
+.leftstyle,.rightstyle{
+    display: flex;
+    flex-direction: column;
+}
+
+[alt="Black Specs"],[alt="Night Black Specs"],[alt="TwiLight Gray"],[alt="Red-Black Specs"],[alt="Blue Specs"]{
+    height: 150px;
+    width: 120px;
+    align-self: center;
+}
+.blackspecs,.nightblackspecs,.twilightgray,.redblackspecs,.bluespecs{
+    
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-top: -20px;
+}
+
+.blackspecs-content,.nightblackspecs-content,.twilightgray-content,.redblackspecs-content,.bluespecs-content{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    background-color: #1c1c1c;
+    height: 170px;
+    width: 170px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin-top: -132px;
+    z-index: -1;
+}
+
+.style [alt="Shopping Bag"]{
+    background-color: #000;
+    padding: 8px 8px;
+    border-radius: 10px;
+}
+
+/* footer */
+footer{
+    margin: 10% 2% 10% 4%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+footer a{
+    text-decoration: none;
+    color: #fff;
+    line-height: 35px;
+    font-weight: 500;
+}
+footer a:hover{
+    text-decoration: underline;
+    font-weight: 600;
+}
+footer ul{
+    margin-top: 20px;
+    padding-right: 22px;
+}
+.support ul{
+    padding-right: 16px;
+}
+footer ul li{
+    list-style: none;
+}
+.products, .support{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.support{
+    padding-right: 40px;
+}
+.subscription-section{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.subscribe{
+    display: flex;
+    background-color: #1c1c1c;
+    padding: 5px 10px;
+    border-radius: 10px;
+    gap: 10px;
+}
+input{
+    padding: auto;
+    background-color: #1c1c1c;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    width: 150px;
+}
+.subscribe-button{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color: #000;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+.subscribe-button p{
+    font-weight: 500;
+    font-size: 17px;
+}
+.subscribe-button p:hover{
+    font-weight: 800;
+    cursor: pointer;
+    text-decoration: underline;
+}
+.socialmediaicons{
+    display: flex;
+    gap: 20px;
+}
+.socialmediaicons img:hover{
+    height: 40px;
+}
+.uparrow{
+    justify-self: flex-end;
+}
+.uparrow:hover{
+    cursor: pointer;
+}
+
+/* Media Query */
+
+@media(max-width:1200px){
+
+    /* Body */
+    /* No Changes */
+    
+    /* Header */
+    [alt="Beats Logo"]{
+        height: 25px;
+    }
+    [alt="Main Image"]
+    {
+        height: 400px;   
+    }
+    .upperright nav ul li a{
+        font-size: 14px;
+    }
+    header button{
+        border-radius: 8px;
+        font-size: 15px;
+        font-weight: 600;
+        padding: 12px 40px;
+    }
+    
+    .onear-logo{
+        padding-left: 30%;
+    }
+    .onear-logo img{
+        height: 60px;
+    }
+    .beats3{
+        margin-left:20%;
+    }
+    .beats3 h1{
+        font-size: 45px;
+    }
+    .beats3 h3{
+        margin: 20px 0;
+    }
+    .beats3 h3+p{
+        margin-bottom: 20px;
+        font-size: 14px;
+        line-height: 30px;
+    }
+    .shopping-bag{ 
+        gap: 22px;
+        padding: 10px 25px;
+        border-radius: 8px;
+    }
+    .shopping-bag img{
+        height: 15px;
+    }
+    .shopping-bag a{
+        font-size: 15px;
+    }
+
+    .shopping-bag img+a+p{
+        font-size: 18px;
+    }
+    .lowerhead img{
+        height: 25px;
+    }
+    
+    
+    /* Main Section */
+    /* specs */
+    .specs-logo img{
+        height: 60px;
+    }
+    
+    .leftspecs h3{
+        font-size: 15px;
+    }
+    .leftspecs p{
+        font-size: 14px;
+    }
+    .rightspecs img{
+        height: 300px;
+    }
+    .battery,.load,.microphone,.connection{
+        width: 30vh;
+    }
+    
+    /* case */
+    .case-image img{
+        height: 300px;
+    }
+    .case-content{
+        margin-left: 20%;
+        gap: 60px;
+    }
+    .case-logo{
+        margin-right: 10%;
+    }
+    .case-logo img{
+        height: 45px;
+    }
+    .case-paragraph{
+        width: 50vh;
+        font-size: 14px;
+        line-height: 28px;
+    }
+    
+    .more-info{
+        margin-top: 22px;
+        gap: 25px;
+        padding: 8px 25px;
+        border-radius: 9px;
+    }
+    .more-info a{
+        font-size: 14px;
+    }
+    .more-info img{
+        height: 20px;
+    }
+    
+    /* Lowercase */
+    .lowercase{
+        padding: 45px;
+        border-radius: 18px;
+        gap: 80px;
+    }
+
+    .lowercase-content p{
+        margin: 12px 0;
+        
+    }
+    .buynow{
+        gap: 18px;
+        padding: 12px 25px;
+        border-radius: 9px;
+    }
+    .lowercase-image img{
+        height: 250px;
+    }
+    
+    /* Style */
+    .style-logo img{
+        height: 70px;
+    }
+    .style-content{
+        gap: 70px;
+    }
+    [alt="Black Specs"],[alt="Night Black Specs"],[alt="TwiLight Gray"],[alt="Red-Black Specs"],[alt="Blue Specs"]{
+        height: 100px;
+        width: 80px;
+    }
+    .blackspecs,.nightblackspecs,.twilightgray,.redblackspecs,.bluespecs{
+        gap: 75px;
+        margin-top: -65px;
+    }
+    
+    .blackspecs-content,.nightblackspecs-content,.twilightgray-content,.redblackspecs-content,.bluespecs-content{
+        height: 100px;
+        width: 100px;
+        padding: 10px 10px;
+        border-radius: 10px;
+    }
+    .blackspecs-content img,.nightblackspecs-content img,.twilightgray-content img,.redblackspecs-content img,.bluespecs-content img{
+        height: 12px;
+        padding: 2px;
+    }
+    .style h3{
+        font-size: 12px;
+    }
+    .style p{
+        font-size: 9px;
+    }
+    .style [alt="Shopping Bag"]{
+        border-radius: 6px;
+    }
+    
+    /* footer */
+    .footerlogo img{
+        height: 25px;
+    }
+    footer h3{
+        font-size: 18px;
+    }
+    footer a{
+        line-height: 28px;
+        font-size: 15px;
+    }
+    footer ul{
+        margin-top: 20px;
+        padding-right: 28px;
+    }
+    .subscription-section{
+        gap: 25px;
+    }
+    .subscribe{
+        display: flex;
+        background-color: #1c1c1c;
+        padding: 4px 8px;
+        border-radius: 8px;
+        gap: 10px;
+    }
+    input{
+        font-size: 15px;
+        width: 120px;
+    }
+    .subscribe-button{
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        background-color: #000;
+        padding: 8px 14px;
+        border-radius: 7px;
+    }
+    .subscribe-button p{
+        font-size: 13px;
+    }
+    .socialmediaicons{
+        gap: 17px;
+    }
+    .socialmediaicons img{
+        height: 30px;
+    }
+    .socialmediaicons img:hover{
+        height: 33px;
+    }
+    .uparrow img{
+        height: 25px;
+    }
+    
+}
+
+
+@media(max-width:992px){
+
+    /* Body */
+    /* No Changes */
+    
+    /* Header */
+    [alt="Beats Logo"]{
+        height: 20px;
+    }
+    [alt="Main Image"]
+    {
+        height: 300px;   
+    }
+    .upperright nav ul li a{
+        font-size: 11px;
+    }
+    header button{
+        font-size: 13px;
+        padding: 10px 30px;
+    }
+    .onear-logo img{
+        height: 50px;
+    }
+    .beats3{
+        margin-left:20%;
+    }
+    .beats3 h1{
+        font-size: 30px;
+    }
+    .beats3 h3{
+        font-size: 15px;
+        margin: 18px 0;
+    }
+    .beats3 h3+p{
+        margin-bottom: 20px;
+        font-size: 11px;
+        line-height: 22px;
+    }
+    .shopping-bag{ 
+        gap: 15px;
+        padding: 8px 20px;
+        border-radius: 6px;
+    }
+    .shopping-bag img{
+        height: 15px;
+    }
+    .shopping-bag a{
+        font-size: 12px;
+    }
+
+    .shopping-bag img+a+p{
+        font-size: 15px;
+    }
+    .lowerhead img{
+        height: 20px;
+    }
+    
+    
+    /* Main Section */
+    /* specs */
+    .specs-content{
+        gap: no-gap;
+        padding-right: 0%;
+    }
+    .specs-logo img{
+        height: 50px;
+    }
+    .specs-content img{
+        height: 20px;
+    }
+    
+    .leftspecs h3{
+        font-size: 12px;
+    }
+    .leftspecs p{
+        font-size: 11px;
+    }
+    .rightspecs img{
+        height: 300px;
+    }
+    .battery,.load,.microphone,.connection{
+        width: 15vh;
+    }
+    
+    /* case */
+    .case-image img{
+        height: 250px;
+    }
+    .case-content{
+        margin-left: 25%;
+        gap: 60px;
+    }
+    .case-logo{
+        margin-right: 15%;
+    }
+    .case-logo img{
+        height: 35px;
+    }
+    .case-paragraph{
+        width: 50vh;
+        font-size: 11px;
+        line-height: 20px;
+    }
+    
+    .more-info{
+        margin-top: 20px;
+        gap: 20px;
+        padding: 7px 20px;
+        border-radius: 6px;
+    }
+    .more-info a{
+        font-size: 12px;
+    }
+    .more-info img{
+        height: 18px;
+    }
+    
+    /* Lowercase */
+    .lowercase{
+        padding: 35px;
+        border-radius: 12px;
+        gap: 60px;
+    }
+    .lowercase h3{
+        font-size: 17px;
+    }
+    .lowercase-content p{
+        margin: 15px 0;
+        font-size: 10px;
+    }
+    .buynow{
+        gap: 15px;
+        padding: 10px 20px;
+        border-radius: 6px;
+    }
+    .buynow a{
+        font-size: 12px;
+    }
+    .buynow img{
+        height: 15px;
+    }
+    .lowercase-image img{
+        height: 200px;
+    }
+    
+    /* Style */
+    .style-logo img{
+        height: 60px;
+    }
+    .style-content{
+        gap: 60px;
+    }
+    [alt="Black Specs"],[alt="Night Black Specs"],[alt="TwiLight Gray"],[alt="Red-Black Specs"],[alt="Blue Specs"]{
+        height: 80px;
+        width: 65px;
+    }
+    .blackspecs,.nightblackspecs,.twilightgray,.redblackspecs,.bluespecs{
+        gap: 75px;
+        margin-top: -65px;
+    }
+    
+    .blackspecs-content,.nightblackspecs-content,.twilightgray-content,.redblackspecs-content,.bluespecs-content{
+        height: 80px;
+        width: 80px;
+        padding: 10px 10px;
+        border-radius: 7px;
+    }
+    .blackspecs-content img,.nightblackspecs-content img,.twilightgray-content img,.redblackspecs-content img,.bluespecs-content img{
+        height: 12px;
+        padding: 2px;
+    }
+    .style h3{
+        font-size: 9px;
+    }
+    .style p{
+        font-size: 7px;
+    }
+    .style [alt="Shopping Bag"]{
+        padding: 5px 5px;
+        border-radius: 5px;
+    }
+
+    /* footer */
+    .footerlogo img{
+        height: 20px;
+    }
+    footer h3{
+        font-size: 14px;
+    }
+    footer a{
+        line-height: 20px;
+        font-size: 11px;
+    }
+    footer ul{
+        margin-top: 10px;
+        padding-right: 36px;
+    }
+    .support ul{
+        padding-right: 30px;
+    }
+    .support,.subscription-section{
+        padding-right: 40px;
+    }
+    .subscription-section{
+        gap: 20px;
+    }
+    .subscribe{
+        padding: 3px 6px;
+        border-radius: 6px;
+        gap: 8px;
+    }
+    .subscribe img{
+        height: 12px;
+    }
+    input{
+        font-size: 10px;
+        width: 80px;
+    }
+    .subscribe-button{
+        gap: 12px;
+        padding: 6px 12px;
+        border-radius: 5px;
+    }
+    .subscribe-button p{
+        font-size: 10px;
+    }
+    .socialmediaicons{
+        gap: 12px;
+    }
+    .socialmediaicons img{
+        height: 20px;
+    }
+    .socialmediaicons img:hover{
+        height: 23px;
+    }
+    .uparrow img{
+        height: 20px;
+    }
+    
+}
+
+
+@media(max-width:768px){
+
+    /* Body */
+    /* No Changes */
+    
+    /* Header */
+    [alt="Beats Logo"]{
+        height: 18px;
+    }
+    [alt="Main Image"]
+    {
+        height: 250px;   
+    }
+    .upperright nav ul li a{
+        font-size: 8px;
+    }
+    header button{
+        border-top: 2.5px solid #868181;
+        border-left: 2.5px solid #868181;
+        font-size: 11px;
+        padding: 7px 24px;
+        border-radius: 8px;
+    }
+    .onear-logo img{
+        height: 38px;
+    }
+    .beats3{
+        margin-left:20%;
+    }
+    .beats3 h1{
+        font-size: 25px;
+    }
+    .beats3 h3{
+        font-size: 13px;
+        margin: 15px 0;
+    }
+    .beats3 h3+p{
+        margin-bottom: 15px;
+        font-size: 9px;
+        line-height: 18px;
+    }
+    .shopping-bag{ 
+        gap: 12px;
+        padding: 6px 15px;
+        border-radius: 5px;
+    }
+    .shopping-bag img{
+        height: 12px;
+    }
+    .shopping-bag a{
+        font-size: 11px;
+    }
+
+    .shopping-bag img+a+p{
+        font-size: 13px;
+    }
+    .lowerhead img{
+        height: 17px;
+    }
+    
+    
+    /* Main Section */
+    /* specs */
+    .specs-content{
+        gap: no-gap;
+        padding-right: 0%;
+    }
+    .specs-logo img{
+        height: 35px;
+    }
+    .leftspecs h3{
+        font-size: 10px;
+    }
+    .leftspecs p{
+        font-size: 9px;
+    }
+    .rightspecs img{
+        height: 200px;
+    }
+    .battery,.load,.microphone,.connection{
+        width: 15vh;
+    }
+    
+    /* case */
+    .case-image img{
+        height: 200px;
+    }
+    .case-content{
+        margin-left: 35%;
+        gap: 50px;
+    }
+    .case-logo{
+        margin-right: 10%;
+        margin-bottom: 6%;
+    }
+    .case-logo img{
+        height: 28px;
+    }
+    .case-paragraph{
+        font-size: 10px;
+        line-height: 18px;
+    }
+    
+    .more-info{
+        margin-top: 15px;
+        gap: 18px;
+        padding: 7px 20px;
+        border-radius: 5px;
+    }
+    .more-info a{
+        font-size: 10px;
+    }
+    .more-info img{
+        height: 15px;
+    }
+    
+    /* Lowercase */
+    .lowercase{
+        padding: 30px;
+        border-radius: 10px;
+        gap: 50px;
+    }
+    .lowercase h3{
+        font-size: 11px;
+    }
+    .lowercase-content p{
+        margin: 10px 0;
+        font-size: 8px;
+    }
+    .buynow{
+        gap: 12px;
+        padding: 7px 10px;
+        border-radius: 5px;
+    }
+    .buynow a{
+        font-size: 8px;
+    }
+    .buynow img{
+        height: 12px;
+    }
+    .lowercase-image img{
+        height: 150px;
+    }
+    
+    /* Style */
+    .style-logo img{
+        height: 45px;
+    }
+    .style-content{
+        gap: 40px;
+    }
+    [alt="Black Specs"],[alt="Night Black Specs"],[alt="TwiLight Gray"],[alt="Red-Black Specs"],[alt="Blue Specs"]{
+        height: 80px;
+        width: 65px;
+    }
+    .blackspecs,.nightblackspecs,.twilightgray,.redblackspecs,.bluespecs{
+        gap: 85px;
+        margin-top: -75px;
+    }
+    
+    .blackspecs-content,.nightblackspecs-content,.twilightgray-content,.redblackspecs-content,.bluespecs-content{
+        height: 80px;
+        width: 80px;
+        padding: 10px 10px;
+        border-radius: 7px;
+    }
+    .blackspecs-content img,.nightblackspecs-content img,.twilightgray-content img,.redblackspecs-content img,.bluespecs-content img{
+        height: 12px;
+        padding: 2px;
+    }
+    .style h3{
+        font-size: 9px;
+    }
+    .style p{
+        font-size: 7px;
+    }
+    .style [alt="Shopping Bag"]{
+        padding: 5px 5px;
+        border-radius: 5px;
+    }
+
+    /* footer */
+    .footerlogo img{
+        height: 18px;
+    }
+    footer h3{
+        font-size: 12px;
+    }
+    footer a{
+
+        font-size: 9px;
+    }
+    footer ul{
+        line-height: 10px;
+        padding-right: 37px;
+    }
+    .support h3{
+        padding-left: 10px;
+    }
+    .support ul{
+        padding-right: 20px;
+    }
+    
+    .support,.subscription-section{
+        padding-right: 10px;
+        margin-left: -20px;
+    }
+    .support{
+        margin-left: -60px;
+    }
+    .products{
+        margin-left: -30px;
+    }
+    .subscription-section{
+        gap: 20px;
+    }
+    .subscribe{
+        padding: 3px 6px;
+        border-radius: 6px;
+        gap: 8px;
+    }
+    .subscribe img{
+        height: 10px;
+    }
+    input{
+        font-size: 8px;
+        width: 50px;
+    }
+    .subscribe-button{
+        gap: 10px;
+        padding: 5px 10px;
+        border-radius: 4px;
+    }
+    .subscribe-button p{
+        font-size: 8px;
+    }
+    .socialmediaicons{
+        gap: 8px;
+    }
+    .socialmediaicons img{
+        height: 18px;
+    }
+    .socialmediaicons img:hover{
+        height: 20px;
+    }
+    .uparrow img{
+        height: 15px;
+    }
+    
+}
+
+
+@media(max-width:600px){
+
+    /* Body */
+    /* No Changes */
+    
+    /* Header */
+    [alt="Beats Logo"]{
+        height: 15px;
+    }
+    [alt="Main Image"]
+    {
+        height: 160px;   
+    }
+    .upperright nav ul li a{
+        font-size: 4px;
+    }
+    header button{
+        border-top: 2px solid #868181;
+        border-left: 2px solid #868181;
+        font-size: 9px;
+        padding: 5px 18px;
+        border-radius: 5px;
+    }
+    .onear-logo img{
+        height: 25px;
+    }
+    .beats3{
+        margin-left:15%;
+        width: 50vw;
+    }
+    .beats3 h1{
+        font-size: 18px;
+    }
+    .beats3 h3{
+        font-size: 10px;
+        margin: 10px 0;
+    }
+    .beats3 h3+p{
+        margin-bottom: 10px;
+        font-size: 4px;
+        line-height: 10px;
+    }
+    .shopping-bag{ 
+        gap: 8px;
+        padding: 5px 10px;
+        border-radius: 4px;
+    }
+    .shopping-bag img{
+        height: 8px;
+    }
+    .shopping-bag a{
+        font-size: 4px;
+    }
+
+    .shopping-bag img+a+p{
+        font-size: 6px;
+    }
+    .lowerhead img{
+        height: 12px;
+    }
+    
+    
+    /* Main Section */
+    /* specs */
+    .specs-content{
+        gap: no-gap;
+        padding-right: 0%;
+    }
+    .specs-logo img{
+        height: 25px;
+    }
+    .leftspecs{
+        gap: 10px;
+        padding-right: 10%;
+    }
+    .leftspecs h3{
+        font-size: 7px;
+    }
+    .leftspecs p{
+        font-size: 6px;
+    }
+    .leftspecs img{
+        height: 12px;
+    }
+    .rightspecs img{
+        height: 150px;
+    }
+    .battery,.load,.microphone,.connection{
+        width: 15vh;
+    }
+    
+    /* case */
+    .case-image img{
+        height: 150px;
+    }
+    .case-content{
+        margin-left: 35%;
+        gap: 25px;
+    }
+    .case-logo{
+        margin-right: 8%;
+        margin-bottom: 3%;
+    }
+    .case-logo img{
+        height: 18px;
+    }
+    .case-paragraph{
+        font-size: 6px;
+        line-height: 10px;
+    }
+    
+    .more-info{
+        margin-top: 10px;
+        gap: 10px;
+        padding: 5px 10px;
+        border-radius: 4px;
+    }
+    .more-info a{
+        font-size: 6px;
+    }
+    .more-info img{
+        height: 10px;
+    }
+    
+    /* Lowercase */
+    
+    .lowercase{
+        padding: 20px 0px;
+        border-radius: 5px;
+        gap: 30px;
+        width: 65vw;
+    }
+    .lowercase h3{
+        font-size: 6px;
+    }
+    
+    .lowercase-content p{
+        margin: 7px 0;
+        font-size: 4px;
+    }
+    .buynow{
+        gap: 5px;
+        padding: 5px 8px;
+        border-radius: 3px;
+    }
+    .buynow a{
+        font-size: 4px;
+    }
+    .buynow img{
+        height: 7px;
+    }
+    .lowercase-image img{
+        height: 90px;
+    }
+    
+    /* Style */
+    .style-logo img{
+        height: 35px;
+    }
+    .style-content{
+        gap: 20px;
+    }
+    [alt="Black Specs"],[alt="Night Black Specs"],[alt="TwiLight Gray"],[alt="Red-Black Specs"],[alt="Blue Specs"]{
+        height: 60px;
+        width: 50px;
+    }
+    .blackspecs,.nightblackspecs,.twilightgray,.redblackspecs,.bluespecs{
+        gap: 100px;
+        margin-top: -95px;
+    }
+    
+    .blackspecs-content,.nightblackspecs-content,.twilightgray-content,.redblackspecs-content,.bluespecs-content{
+        height: 60px;
+        width: 60px;
+        padding: 8px 8px;
+        border-radius: 5px;
+    }
+    .blackspecs-content img,.nightblackspecs-content img,.twilightgray-content img,.redblackspecs-content img,.bluespecs-content img{
+        height: 9px;
+        padding: 2px;
+    }
+    .style h3{
+        font-size: 7px;
+    }
+    .style p{
+        font-size: 4px;
+    }
+    .style [alt="Shopping Bag"]{
+        padding: 4px 4px;
+        border-radius: 3px;
+    }
+
+    /* footer */
+    .footerlogo img{
+        height: 15px;
+    }
+    footer h3{
+        font-size: 9px;
+    }
+    footer a{
+
+        font-size: 6px;
+    }
+    footer ul{
+        padding-right: 45px;
+    }
+    .support ul{
+        padding-right: 28px;
+    }
+    footer ul li a{
+        line-height: 8px;
+    }
+    
+    
+    
+    .support,.subscription-section{
+        padding-right: 10px;
+        margin-left: -20px;
+    }
+    .support{
+        margin-left: -60px;
+    }
+    .products{
+        margin-left: -20px;
+    }
+    .subscription-section{
+        gap: 10px;
+    }
+    .subscribe{
+        padding: 2.5px 5px;
+        border-radius: 3px;
+        gap: 8px;
+    }
+    .subscribe img{
+        height: 8px;
+    }
+    input{
+        font-size: 6px;
+        width: 35px;
+    }
+    .subscribe-button{
+        gap: 7px;
+        padding: 4px 8px;
+        border-radius: 4px;
+    }
+    .subscribe-button p{
+        font-size: 6px;
+    }
+    .socialmediaicons{
+        gap: 6px;
+    }
+    .socialmediaicons img{
+        height: 13px;
+    }
+    .socialmediaicons img:hover{
+        height: 15px;
+    }
+    .uparrow img{
+        height: 12px;
+    }
+    
+}
